@@ -17,7 +17,7 @@ class AppConfig(BaseSettings):
     # Vector store
     vector_store_class: PyObject = "langchain.vectorstores.Milvus"
     vector_store_connection_args: dict = {
-        "host": "my-release-milvus.default.svc.cluster.local",
+        "host": "milvus.default.svc.cluster.local",
         "port": "19530",
     }
 
